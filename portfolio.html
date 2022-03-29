@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Trust</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="The Simple Trust, a youth organisation.We love to make the world the better place to live.Save Nature, Spread Humanity and Succour Education is our major goal.">
+    <meta name="keywords" content="Simple Trust, NGO, education, environment, human rights">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="single-page portfolio">
+    <style>
+                .slider_container {
+                    width: 920px;
+                    margin: auto;
+                    clear: both;
+                    background: url(images/shadow_top.png) no-repeat top center;
+                    padding: 30px 0 0 0;
+                }
+
+                .flex-caption {
+                    position: absolute;
+                    right: 11px;
+                    bottom: 20px;
+                }
+
+                .caption_title_line {
+                    width: 450px;
+                    height: 75px;
+                    padding: 5px 15px 10px 15px;
+                    background: url(images/slider_caption_bg.png) repeat;
+                    color: #303030;
+                }
+
+                .flex-caption h2 {
+                    color: #303030;
+                    font-size: 20px;
+                    padding: 5px 0 5px 0;
+                    margin: 0px;
+                    font-family: 'Ovo', serif;
+                }
+
+                .flex-container a:active,
+                .flexslider a:active {
+                    outline: none;
+                }
+
+                .slides,
+                .flex-control-nav,
+                .flex-direction-nav {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                /* FlexSlider Necessary Styles
+        *********************************/
+                .flexslider {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 0 30px 0;
+                    background: url(images/shadow_bottom.png) no-repeat center bottom;
+                }
+
+                    .flexslider .slides > li {
+                        display: none;
+                    }
+                    /* Hide the slides before the JS is loaded. Avoids image jumping */
+                    .flexslider .slides img {
+                        max-width: 100%;
+                        display: block;
+                        border: 10px #ededed solid;
+                    }
+
+                .flex-pauseplay span {
+                    text-transform: capitalize;
+                }
+
+                .slides:after {
+                    content: ".";
+                    display: block;
+                    clear: both;
+                    visibility: hidden;
+                    line-height: 0;
+                    height: 0;
+                }
+
+                html[xmlns] .slides {
+                    display: block;
+                }
+
+                * html .slides {
+                    height: 1%;
+                }
+
+                .no-js .slides > li:first-child {
+                    display: block;
+                }
+
+                .flexslider {
+                    position: relative;
+                    zoom: 1;
+                }
+
+                    .flexslider .slides {
+                        zoom: 1;
+                    }
+
+                        .flexslider .slides > li {
+                            position: relative;
+                        }
+
+                .flex-container {
+                    zoom: 1;
+                    position: relative;
+                }
+                /* Direction Nav */
+                .flex-direction-nav li a {
+                    width: 45px;
+                    height: 42px;
+                    margin: 0;
+                    display: block;
+                    position: absolute;
+                    right: 11px;
+                    cursor: pointer;
+                    text-indent: -9999px;
+                }
+
+                    .flex-direction-nav li a.next {
+                        background: url(images/next.png) no-repeat center;
+                        bottom: 184px;
+                    }
+
+                    .flex-direction-nav li a.prev {
+                        background: url(images/prev.png) no-repeat center;
+                        bottom: 141px;
+                    }
+
+                    .flex-direction-nav li a.next:hover {
+                        background: url(images/next_a.png) no-repeat center;
+                    }
+
+                    .flex-direction-nav li a.prev:hover {
+                        background: url(images/prev_a.png) no-repeat center;
+                    }
+
+                    .flex-direction-nav li a.disabled {
+                        opacity: .3;
+                        filter: alpha(opacity=30);
+                        cursor: default;
+                    }
+                /* Control Nav */
+                .flex-control-nav {
+                    width: 100%;
+                    position: absolute;
+                    bottom: -30px;
+                    text-align: center;
+                }
+
+                    .flex-control-nav li {
+                        margin: 0 0 0 5px;
+                        display: inline-block;
+                        zoom: 1;
+                        *display: inline;
+                    }
+
+                        .flex-control-nav li:first-child {
+                            margin: 0;
+                        }
+
+                        .flex-control-nav li a {
+                            width: 13px;
+                            height: 13px;
+                            display: block;
+                            cursor: pointer;
+                            text-indent: -9999px;
+                        }
+
+                            .flex-control-nav li a:hover {
+                                background-position: 0 -13px;
+                            }
+
+                            .flex-control-nav li a.active {
+                                background-position: 0 -26px;
+                                cursor: default;
+                            }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var $ = jQuery.noConflict();
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "fade"
+            });
+            $(function () {
+                $('.show_menu').click(function () {
+                    $('.menu').fadeIn();
+                    $('.show_menu').fadeOut();
+                    $('.hide_menu').fadeIn();
+                });
+                $('.hide_menu').click(function () {
+                    $('.menu').fadeOut();
+                    $('.show_menu').fadeIn();
+                    $('.hide_menu').fadeOut();
+                });
+            });
+        });
+    </script>
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            MAIL: <a href="#">contact@simpletrust.org</a>
+                        </div><!-- .header-bar-email -->
+
+                        <!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+						  <a href='https://forms.gle/mC4TiEdcbtKheU8u7'>
+									Scholarship
+                                </a> 
+                            <a href="https://www.payumoney.com/paybypayumoney/#/f4c0ffa331b34b22970d0018b9935208">Donate Now</a>
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="/" rel="home"><img class="d-block" src="images/logo.jpeg" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="causes.html">Causes</a></li>
+                                <li class="current-menu-item"><a href="portfolio.html">Gallery</a></li>
+                                <!--<li><a href="news.html">News</a></li>-->
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Portfolio</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="slider_container">
+        <h3 class="entry-title"><a href="#">Chennai tree plantation 2019</a></h3>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#"><img src="images/MM2/1.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/2.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/3.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/4.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/5.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/6.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/7.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/8.jpg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/9.JPG" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/10.JPG" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/11.JPG" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/12.CR2" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/13.CR2" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/14.CR2" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/15.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/16.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/17.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/18.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/19.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/MM2/20.jpeg" alt="" title="" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider_container">
+        <h3 class="entry-title"><a href="#">Delta Relief 2018</a></h3>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#"><img src="images/delta/1.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/2.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/3.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/4.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/5.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/6.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/7.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/8.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/9.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/10.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/11.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/12.jpeg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/delta/13.jpeg" alt="" title="" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider_container">
+        <h3 class="entry-title"><a href="#">Trichy - tree plantation 2019</a></h3>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/1.jpg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/2.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/3.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/4.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/5.jpeg" alt="" title="" /></a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="images/trichy_aug11/6.jpeg" alt="" title="" /></a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="slider_container">
+        <h3 class="entry-title"><a href="#">Ooruni - Freedom Carnival 2019</a></h3>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#"><img src="images/Ooruni/1.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/2.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/3.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/4.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/5.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/6.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/7.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/8.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/9.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/10.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/11.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/12.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/13.jpg" alt="" title="" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ooruni/14.jpg" alt="" title="" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="portfolio-wrap"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="row portfolio-container"> -->
+    <!-- <div class="col-12 col-md-6 col-lg-4 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/a.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/b.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-5 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/c.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AID</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-5 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/d.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AID</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/e.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/f.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/g.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/h.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/i.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/j.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/k.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/l.jpeg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-4 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/a.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/b.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-5 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/c.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AID</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-5 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/d.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AID</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/e.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/f.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/g.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/h.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item"> -->
+    <!-- <div class="portfolio-cont"> -->
+    <!-- <a href="#"><img src="images/i.jpg" alt=""></a> -->
+    <!-- <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3> -->
+    <!-- <h4>2018 Causes</h4> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="row"> -->
+    <!-- <div class="col-12 d-flex justify-content-center mt-72"> -->
+    <!-- <a href="#" class="btn gradient-bg load-more-btn">Load More</a> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="#"><img src="images/foot-logo.jpeg" alt=""></a></h2>
+
+                            <p>The Simple Trust, a youth organisation.We love to make the world the better place to live.Save Nature, Spread Humanity and Succour Education is our major goal.</p>
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
+                                <li><a href="www.facebook.com/SimpleTrustTN" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/simpletrust1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/simpletrusttn/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Useful Links</h2>
+
+                        <ul>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-V4hfP-lByH2eV8C_1EtfEmI1m2NF1cHCOLGQGClwJwwA1Q/viewform?usp=pp_url">Become  a Volunteer</a></li>
+                            <li><a href="https://www.payumoney.com/paybypayumoney/#/f4c0ffa331b34b22970d0018b9935208">Donate</a></li>
+                            <li><a href="causes.html">Causes</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+							 <li>
+                                <a href="https://chat.whatsapp.com/CRVVADmeCRUCEiDnYs4EhX">Join our WhatsApp Group</a>
+                            </li>
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                            <h2>Latest News</h2>
+                             <ul>
+                                <li>
+                                    <h3><a href="#">Negizhi Thavir</a></h3>
+                                    <div class="posted-date">Oct, 2020</div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#">Chennai tree Plantation</a></h3>
+                                    <div class="posted-date">Sep, 2019</div>
+                                </li>
+								<li>
+                                    <h3><a href="#">Trichy Tree plantation</a></h3>
+                                    <div class="posted-date">Jul, 2019</div>
+                                </li>
+                            </ul>
+
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul>
+                               
+                                <li><i class="fa fa-envelope"></i><span>info@simpletrust.org</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>No.3, Amudham Nagar Extention, Peerkaranai, new Perungalathur, Chennai - 600063.</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+				<h6> Design & Developed by Softrate</h6>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>

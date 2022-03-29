@@ -1,0 +1,33 @@
+ROUTING PROTOCOLS FOR WIRELESS NETWORKS
+Four Different Protocols
+
+DSDV - (obeys the Routing table)
+AODV - Adhoc (Best and Optimal)
+DSR - Dynamic source Routing (using cache memory(route/path))
+OLSR - Optimal Link state routing.
+
+              
+           / DSDV
+          /
+Proactive \
+           \
+            \OLSR
+
+             
+            / DSR
+           /
+Reactive  /
+          \
+           \ AODV
+
+Designing a network
+ CBR - Constant Byte Rate(Online songs)
+ FTP - File Transfer protocol(Downloading)
+
+
+
+
+
+
+
+

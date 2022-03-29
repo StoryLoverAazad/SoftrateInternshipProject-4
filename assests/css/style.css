@@ -1,0 +1,87 @@
+/*
+    Theme Name: Vesperr
+    Theme URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
+
+@import url('font-awesome.css');
+/* ==== overwrite bootstrap standard ==== */
+@import url('overwrite.css');
+/* =======================================
+3. Section: About
+======================================== */
+.roles {
+	text-align:center;
+}
+
+ul.social-profile {
+	list-style:none;
+	margin-left:0;
+}
+
+ul.social-profile li {
+	display:inline;
+}
+
+ul.social-profile li a:hover {
+	text-decoration:none;
+}
+
+
+/* ============ font awesome icons ===================== */
+
+ul.the-icons {
+	list-style:none;
+	margin-left:0;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    float:none;
+
+}
+
+.icon-square,
+.icon-rounded,
+.icon-plain,
+.icon-circled {
+    margin: 10px 10px 10px 0;
+    display: inline-block !important;
+    text-align: center !important;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+	padding:3px;
+    font-size: 12px;
+    line-height: 18px;
+    text-shadow:none;
+    cursor: pointer;
+}
+
+.icon-rounded  {
+    background-color: #444;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.icon-circled {
+    background-color: #444;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.icon-square {
+    background-color: #444;
+}
+.icon-plain {
+    width: 48px;
+    height: 48px;
+    font-size: 47px;
+    line-height: 50px;
+    color: #444;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.icon-plain:hover { color: #777; }
