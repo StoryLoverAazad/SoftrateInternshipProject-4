@@ -45,7 +45,8 @@ a:active {
 # Header Bar
 --------------------------------*/
 .top-header-bar {
-  background: #4169e1;
+  background: linear-gradient( 270deg, rgba(255, 90, 0, 1) 0%, #4169e1 100% );
+  /* background: #019267; */
   color: #fff;
 }
 
@@ -55,9 +56,9 @@ a:active {
 .header-bar-email,
 .header-bar-text {
   padding: 20px 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .header-bar-email a,
@@ -66,7 +67,19 @@ a:active {
   color: #fff;
   text-decoration: none;
 }
+.top-header-bar .container .row a.icon{
+  margin-left: 80px;
+  margin-right: 10px;
+  }
 
+.top-header-bar .container .row a i{
+    padding: 9px;
+    margin-left: 10px;
+    color: black;
+    background-color: #fff;
+    border-radius: 50px;
+
+ }
 /*
 # Header Bar Text
 --------------------------------*/
