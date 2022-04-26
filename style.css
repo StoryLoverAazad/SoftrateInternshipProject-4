@@ -1169,6 +1169,10 @@ ul.tabs-nav .tab-nav.active {
   background: #fff;
 }
 
+.swiper-slide{
+ margin: 10px 10px;
+}
+
 .our-causes .cause-content-wrap .entry-content {
   margin-top: 20px;
 }
