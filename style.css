@@ -38,6 +38,12 @@ a:active {
   list-style: none;
 }
 
+@media screen and (max-width: 556px) {
+  .our-causes .section-heading {
+    margin: 10px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Site Header
 --------------------------------------------------------------*/
@@ -788,7 +794,8 @@ ul.tabs-nav .tab-nav.active {
 # Icon Box
 ----------------------------------*/
 .icon-box {
-  width: 320px;
+  margin: auto;
+  /* width: 320px; */
   height: 250px;
   padding: 40px;
   border-radius: 24px;

@@ -38,18 +38,21 @@
 
 .prev, .next{
 	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	font-size: 50px;
-	padding: 15px;
-	cursor: pointer;
-	color: #fff;
-	transition: 0.1s;
-	user-select: none;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .25);
+    color: #fff!important;
+    transition: 0.1s;
+    user-select: none;
 }
 .prev:hover, .next:hover{
-	color: black;
+	background-color: rgba(28,29,33, .75);
+    color: #EEEFF7!important;
 }
+
 .next{
 	right: 0;
 }
