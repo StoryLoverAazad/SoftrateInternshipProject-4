@@ -996,10 +996,6 @@ ul.tabs-nav .tab-nav.active {
   .home-page-welcome img {
     margin-bottom: 60px;
   }
-  .foot-logo img {
-    width: 160%;
-    height: 100%;
-}
 }
 
 /*
@@ -2301,6 +2297,11 @@ ul.tabs-nav .tab-nav.active {
 .foot-logo img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width:994px){
+  .foot-logo img {
+    width: 160%;
+    height: 100%;
 }
 
 .footer-bar {
