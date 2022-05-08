@@ -460,7 +460,7 @@ a:active {
   }
 
   .hero-slider .pagination-wrap {
-    height: 40px;
+    /* height: 40px; */
   }
 }
 
@@ -473,11 +473,12 @@ a:active {
     font-size: 22px;
   }
 
-  .hero-content-overlay p,
+  .hero-content-overlay
   .hero-slider .pagination-wrap,
   .hero-slider .swiper-button-next,
   .hero-slider .swiper-button-prev {
     display: none;
+    /* font-size: small; */
   }
 
   .hero-content-overlay footer {
