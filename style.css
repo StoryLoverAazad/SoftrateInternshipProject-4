@@ -2298,11 +2298,14 @@ ul.tabs-nav .tab-nav.active {
   height: 100%;
 }
 @media (min-width: 994px) {
+  
   .foot-logo img {
     width: 160%;
     height: 100%;
     margin-left: -16%;
   }
+}
+
 
   .footer-bar {
     padding: 30px 0;
@@ -2354,12 +2357,20 @@ ul.tabs-nav .tab-nav.active {
     cursor: pointer;
     outline: none;
   }
-}
 
-footer h6{
+
+footer last{
+  
+  display: flex;
+  flex-direction: row;
+}
+footer h6,img{
+  padding: 0px;
+  margin: 0px;
+  color: gray;
   margin-top: 10px;
 }
 
-footer a{  
+footer a,img{  
   margin: auto;
 }
