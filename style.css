@@ -2355,3 +2355,11 @@ ul.tabs-nav .tab-nav.active {
     outline: none;
   }
 }
+
+footer h6{
+  margin-top: 10px;
+}
+
+footer a{  
+  margin: auto;
+}
